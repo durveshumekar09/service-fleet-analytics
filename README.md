@@ -40,3 +40,40 @@ This project demonstrates a complete, reproducible analytics workflow:
 ---
 
 ## 📁 Repository Structure
+service-fleet-analytics/
+│
+├── notebooks/
+│   └── 01_clean.ipynb
+│       # Python notebook for data cleaning (pandas)
+│
+├── data_clean/
+│   ├── service_events_clean.csv
+│   └── assets_clean.csv
+│       # Cleaned, analysis-ready CSV files
+│
+├── sql/
+│   ├── 01_create_tables.sql
+│   │   # Creates DB, schema, ASSETS, SERVICE_EVENTS_RAW, and final SERVICE_EVENTS
+│   │
+│   ├── 02_create_views.sql
+│   │   # Creates analytical views:
+│   │   # VW_MONTHLY_TREND, VW_HIGH_RISK_ASSETS, VW_DEPARTMENT_TREND, VW_COST_BY_DEPARTMENT
+│   │
+│   └── 03_kpi_queries.sql
+│       # KPI and validation queries for checks and screenshots
+│
+├── screenshots/
+│   ├── snowflake_objects.png
+│   ├── service_events_count.png
+│   ├── total_cost_check.png
+│   ├── vw_monthly_trend_result.png
+│   └── vw_cost_by_department_result.png
+│       # Proof of Snowflake setup and results
+│
+├── powerbi/
+│   └── fleet_dashboard.pbix
+│       # (Add later) Power BI dashboard file
+│
+└── README.md
+    # Project overview, setup steps, and explanation
+
