@@ -6,19 +6,50 @@ End-to-end analytics project using **Python**, **Snowflake (SQL)**, and **Power 
 
 ---
 
-## 🚀 Project Summary
+## 🧩 Business Problem
 
-This repository demonstrates a **reproducible analytics workflow**:
+Operations teams often lack a **clear, data-driven view** of their service fleet performance.  
+Key challenges include:
 
-1. **Python (pandas)** for data cleaning and preparation  
-2. **Snowflake** for warehousing, transformations, and analytics  
-3. **SQL views** for BI consumption  
-4. **Power BI** for visualization (to be added)
+- No single view of **how service volume changes over time**
+- Difficulty identifying **which assets are most problematic (high-risk)**
+- Limited visibility into **which departments drive most maintenance work**
+- Poor understanding of **where maintenance costs are concentrated**
+
+Without this visibility, it is hard to:
+- Prioritize preventive maintenance
+- Allocate resources effectively
+- Control maintenance costs
+- Make informed replace-vs-repair decisions
+
+---
+
+## 🎯 Business Objectives
+
+- Track **monthly service volume trends**
+- Identify **high-risk assets** based on service frequency
+- Analyze **department-wise maintenance workload**
+- Understand **maintenance cost distribution by department**
+- Provide **BI-ready datasets** for management reporting
+
+---
+
+## 💡 Solution Overview
+
+This project implements a **reproducible analytics pipeline**:
+
+1. **Python (pandas)** cleans and prepares raw service fleet data  
+2. **Snowflake** stores data in a RAW → FINAL (curated) model  
+3. **SQL views** provide analytics-ready datasets for BI  
+4. **Power BI** (to be added) visualizes trends, risk, workload, and cost impact  
 
 Key outputs:
-- Clean, analytics-ready fact table (`SERVICE_EVENTS`)
-- Analytical views for trends, risk, workload, and cost
-- SQL scripts and screenshots as proof of results
+- Clean fact table: `SERVICE_EVENTS`
+- Analytical views:
+  - `VW_MONTHLY_TREND`
+  - `VW_HIGH_RISK_ASSETS`
+  - `VW_DEPARTMENT_TREND`
+  - `VW_COST_BY_DEPARTMENT`
 
 ---
 
@@ -27,7 +58,7 @@ Key outputs:
 - **Python** (pandas) – data cleaning & preparation  
 - **Snowflake** – data warehousing & SQL analytics  
 - **SQL** – transformations, KPIs, and analytical views  
-- **Power BI** – dashboarding (coming next)
+- **Power BI** – dashboarding (coming next)  
 
 ---
 
