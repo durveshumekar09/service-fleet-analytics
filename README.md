@@ -1,4 +1,4 @@
-# Service Fleet Analytics
+# Service Operations & Performance Analytics
 
 End-to-end analytics project using **Python**, **Snowflake (SQL)**, and **Power BI** to analyze service fleet operations, identify high-risk assets, understand department workload, and evaluate maintenance cost impact.
 
@@ -63,3 +63,4 @@ Key outputs:
 ---
 
 ## 📁 Repository Structure
+
